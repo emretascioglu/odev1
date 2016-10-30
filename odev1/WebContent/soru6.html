@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SORU-6</title>
+</head>
+<body>
+	<select id="gun"></select>
+    <select id="yil">	</select>
+	<select>
+	    <option value='1'>Ocak</option>
+	    <option value='2'>Şubat</option>
+	    <option value='3'>Mart</option>
+	    <option value='4'>Nisan</option>
+	    <option value='5'>Mayıs</option>
+	    <option value='6'>Haziran</option>
+	    <option value='7'>Temmuz</option>
+	    <option value='8'>Ağustos</option>
+	    <option value='9'>Eylül</option>
+	    <option value='10'>Ekim</option>
+	    <option value='11'>Kasım</option>
+	    <option value='12'>Aralık</option>
+    </select> 
+	<script>
+window.onload = function () {
+    var selectDay = document.getElementById("gun");
+    var selectYear = document.getElementById("yil");
+    for(var i = 30; i >= 1; --i) {
+        var option = document.createElement('option');
+        option.text = option.value = i;
+        selectDay.add(option, 0);
+    }
+    for(var i = 2016; i >= 1907; --i) {
+        var option = document.createElement('option');
+        option.text = option.value = i;
+        selectYear.add(option, 0);
+    }
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SORU-5</title>
+</head>
+<body>
+	<input id="baslik" type="text"/>
+	<input onclick="setTitle()" type="button" value="Baslik Girelim" />
+</body>
+<script>
+	var setTitle = function() {
+		var title = document.getElementById("baslik").value;
+		document.title = title;
+		}
+</script>
+</html>
